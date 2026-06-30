@@ -17,8 +17,8 @@ dnf5 install -y tmux
 ##TODO every once in a while check for new version: https://repo.protonvpn.com/fedora-43-stable/
 ## https://protonvpn.com/support/official-linux-vpn-fedora
 wget "https://repo.protonvpn.com/fedora-$(cat /etc/fedora-release | cut -d' ' -f 3)-stable/protonvpn-stable-release/protonvpn-stable-release-1.0.4-1.noarch.rpm"
-dnf5 install ./protonvpn-stable-release-1.0.4-1.noarch.rpm && sudo dnf check-update --refresh
-dnf5 install proton-vpn-cli
+dnf5 -y install ./protonvpn-stable-release-1.0.4-1.noarch.rpm && sudo dnf check-update --refresh
+dnf5 -y install proton-vpn-cli
 ##install wezterm:
 dnf5 -y copr enable wezfurlong/wezterm-nightly
 dnf5 -y install wezterm

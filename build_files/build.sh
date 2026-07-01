@@ -24,6 +24,10 @@ dnf5 -y copr disable wezfurlong/wezterm-nightly
 # dnf5 -y install package
 # Disable COPRs so they don't end up enabled on the final image:
 # dnf5 -y copr disable ublue-os/staging
+#
+# The superior default editor
+#
+dnf5 swap -y nano-default-editor vim-default-editor
 
 #### Example for enabling a System Unit File
 

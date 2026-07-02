@@ -167,7 +167,6 @@ for repo in "${COPR_REPOS[@]}"; do
 done
 
 log "Install layered Copr packages"
-for repo in "${COPR_REPOS[@]}"; do
 LAYERED_PACKAGES=(
     ghostty
     wezterm

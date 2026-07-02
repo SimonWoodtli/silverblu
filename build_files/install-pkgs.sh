@@ -86,7 +86,6 @@ LAYERED_PACKAGES+=(
 )
 # Container
 LAYERED_PACKAGES+=(
-    cosign
     podman-tui
     podman-compose
     podman-remote

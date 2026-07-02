@@ -20,7 +20,6 @@ LAYERED_PACKAGES=(
     yq
     ugrep
     uutils-coreutils
-    starship
     direnv
     chezmoi
     tealdeer
@@ -47,7 +46,6 @@ LAYERED_PACKAGES+=(
     nodejs-npm
     pnpm
     yarnpkg
-    bun
     exercism
     python3-pip
     pipx
@@ -89,8 +87,6 @@ LAYERED_PACKAGES+=(
 # Container
 LAYERED_PACKAGES+=(
     cosign
-    devpod
-    devpod-desktop
     podman-tui
     podman-compose
     podman-remote
